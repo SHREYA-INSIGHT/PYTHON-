@@ -40,3 +40,27 @@ if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
     print(year, "is a leap year.")
 else:
     print(year, "is not a leap year.")
+
+##assignment 
+##simple calculator program
+##take user input 
+
+num1=float(input("Enter first number: "))
+num2=float(input("Enter second number: "))
+operation = input("Enter operator (+, -, *, /): ")
+## perform the requested operation 
+if operation == '+':
+    result=num1+num2
+elif operation == '-':
+    result=num1-num2
+elif operation == '*':
+    result=num1*num2
+elif operation == '/':
+    if num2 != 0:
+        result=num1/num2
+    else:
+        result="Error: Division by zero"    
+else:
+    result="Invalid operation"
+print("Result:", result)
+
